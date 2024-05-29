@@ -23,11 +23,11 @@ public class StudentGradeEvaluation {
         String grade;
         if (score >= 90) {
             grade = "A";
-        } else if (score >= 80 && score <= 89) {
+        } else if (score >= 80) {
             grade = "B";
-        } else if (score >= 70 && score <= 79) {
+        } else if (score >= 70) {
             grade = "C";
-        } else if (score >= 60 && score <= 69) {
+        } else if (score >= 60) {
             grade = "D";
         } else {
             grade = "F";
@@ -36,9 +36,9 @@ public class StudentGradeEvaluation {
         // Print the student's details
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
-        System.out.println("Score" + score);
+        System.out.println("Score: " + score);
 
-        System.out.println("Grade " + grade);
+        System.out.println("Grade: " + grade);
 
     }
 }
