@@ -8,21 +8,35 @@ public class StudentGradeEvaluation {
 
         // Prompt the user to enter their name
         System.out.print("Enter your name: ");
-        
 
+        String name = scanner.nextLine();
         // Prompt the user to enter their age
-        
+        System.out.println("Enter your age: ");
 
         // Prompt the user to enter their exam score
-        
+        int age = scanner.nextInt();
+        System.out.println("Enter your exam score: ");
+        int score = scanner.nextInt();
 
         // Determine the grade
         String grade;
-        
+        if (score >= 90) {
+            grade = "A";
+        } else if (score >= 80 && score <= 89) {
+            grade = "B";
+        } else if (score >= 70 && score <= 79) {
+            grade = "C";
+        } else if (score >= 60 && score <= 69) {
+            grade = "D";
+        } else {
+            grade = "F";
+        }
 
         // Print the student's details
-        
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Score" + score);
+        System.out.println("Grade " + grade);
 
-       
     }
 }
