@@ -11,11 +11,12 @@ public class StudentGradeEvaluation {
 
         String name = scanner.nextLine();
         // Prompt the user to enter their age
-        System.out.println("Enter your age: ");
+        System.out.print("Enter your age: ");
 
         // Prompt the user to enter their exam score
         int age = scanner.nextInt();
-        System.out.println("Enter your exam score: ");
+
+        System.out.print("Enter your exam score: ");
         int score = scanner.nextInt();
 
         // Determine the grade
@@ -36,6 +37,7 @@ public class StudentGradeEvaluation {
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
         System.out.println("Score" + score);
+
         System.out.println("Grade " + grade);
 
     }
